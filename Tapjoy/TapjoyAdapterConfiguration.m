@@ -45,8 +45,7 @@ typedef NS_ENUM(NSInteger, TapjoyAdapterErrorCode) {
 }
 
 - (NSString *)biddingToken {
-    NSString *token = [Tapjoy getUserToken];
-    return (token.length > 0 ? token : @"1");
+    return [Tapjoy getUserToken];
 }
 
 - (NSString *)moPubNetworkName {
